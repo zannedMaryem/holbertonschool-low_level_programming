@@ -2,11 +2,7 @@
 #include <time.h>
 #include<stdio.h>
 /**
- * Main - Entry point
- *
- * Description: This is a program that takes a random value n
- *		and determines whether if it's positive or negative or null
- *
+ * main - Entry point
  * Return: Always 0 (Success)
  */
 
