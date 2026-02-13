@@ -3,7 +3,10 @@
  * main - Entry point
  *
  * Return: Always 0 (Success)
+ * Description: This program prints "_putchar" followed by a new line to the standard output.
  */
+char str[] = "_putchar";
+
 int main(void)
 {
 	int i;
