@@ -8,5 +8,15 @@
  * On error, -1 is returned, and errno is set appropriately.
  */
 int _putchar(char c);
-void print_alphabet(void);
+int print_alphabet(void)
+{
+	char ch;
+
+	for (ch = 'a'; ch <= 'z'; ch++)
+	{
+		_putchar(ch);
+	}
+	_putchar('\n');
+	return (0);
+}
 #endif
