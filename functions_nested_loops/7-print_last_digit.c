@@ -4,7 +4,7 @@
  * @n: The number to be checked
  * Return: The value of the last digit
  */
-void print_last_digit(int n)
+int print_last_digit(int n)
 {
 	int last_digit;
 	last_digit = n % 10;
