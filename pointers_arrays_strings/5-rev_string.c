@@ -5,16 +5,6 @@
  */
 void rev_string(char *s)
 {
-	print_rev(s);
-}
-/**
- *print_rev - a function that prints a string, in reverse,
- *followed by a new line.
- * @s: string variable
- * Return: void
- */
-void print_rev(char *s)
-{
 	int i = _strlen(s) - 1;
 
 	while (i >= 0)
