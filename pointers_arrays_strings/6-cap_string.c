@@ -10,7 +10,7 @@ char *cap_string(char *s)
 	int i = 0;
 	int cap = 1;
 
-	wihle(s[i] != '\0')
+	while (s[i] != '\0')
 	{
 		if (s[i] == ' ' || s[i] == "." ||
 			s[i] == ',' || s[i] == ';' ||
