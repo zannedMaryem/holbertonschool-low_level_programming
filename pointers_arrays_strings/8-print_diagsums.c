@@ -16,8 +16,8 @@ void print_diagsums(int *a, int size)
 
 	for (i = 0; i < size; i++)
 	{
-		diag_1 += a[i][i];
-		diag_2 += a[i][size - i - 1];
+		diag_1 += a[i * size + i];
+		diag_2 += a[i * size + (size - i - 1)];
 	}
 	printf("%d, %d\n", diag_1, diag_2);
 }
