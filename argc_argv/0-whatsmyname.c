@@ -9,5 +9,9 @@
 int main(int argc, char *argv[])
 {
 	printf("%s\n", argv[0]);
+	if (argc == 1)
+	{
+		printf("The command had no other arguments.\n");
+	}
 	return (0);
 }
