@@ -18,7 +18,7 @@ char *_strdup(char *str)
 	{
 		len++;
 	}
-	if (str == NULL || len == 0)
+	if (str_dupe == NULL || len == 0)
 	{
 		return (NULL);
 	}
