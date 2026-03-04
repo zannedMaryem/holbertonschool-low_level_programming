@@ -1,8 +1,8 @@
 #include "stdio.h"
 /**
  *main - a program that prints its name, followed by a new line.
- *@argc: number of arguments passed to the program
- *@argv: array of arguments passd to the program
+ *@argc: number of arguments passed to the program.
+ *@argv: array of arguments passd to the program.
  *
  * Return: 0 Success.
  */
