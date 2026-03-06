@@ -11,18 +11,18 @@
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
 	unsigned int *array;
-	int i = 0;
+	int i;
 
 	if (nmemb == 0 || size == 0)
 	{
 		return (NULL);
 	}
-	array = malloc(nmemb * sizeof(size));
+	array = malloc(nmemb * size);
 	if (array == NULL)
 	{
 		return (NULL);
 	}
-	while (array[i] != '\0')
+	for (i = 0; array[i] < nmemb; i++)
 	{
 		array[i] = 0;
 		i++;
