@@ -12,7 +12,7 @@ int _strlen(char *s)
 
 	while (s[len] != '\0')
 		len++;
-	return len;
+	return (len);
 }
 /**
  * _strcpy - copies a string to another buffer
@@ -31,7 +31,7 @@ char *_strcpy(char *dest, char *src)
 		i++;
 	}
 	dest[i] = '\0';
-	return dest;
+	return (dest);
 }
 /**
  * new_dog - creates a new dog
@@ -47,11 +47,11 @@ dog_t *new_dog(char *name, float age, char *owner)
 	int len_name, len_owner;
 
 	if (name == NULL || owner == NULL)
-		return NULL;
+		return (NULL);
 
 	d = malloc(sizeof(dog_t));
 	if (d == NULL)
-		return NULL;
+		return (NULL);
 
 	len_name = _strlen(name);
 	len_owner = _strlen(owner);
@@ -60,7 +60,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 	if (d->name == NULL)
 	{
 		free(d);
-		return NULL;
+		return (NULL);
 	}
 	_strcpy(d->name, name);
 
@@ -69,11 +69,11 @@ dog_t *new_dog(char *name, float age, char *owner)
 	{
 		free(d->name);
 		free(d);
-		return NULL;
+		return (NULL);
 	}
 	_strcpy(d->owner, owner);
 
 	d->age = age;
 
-	return d;
+	return (d);
 }
