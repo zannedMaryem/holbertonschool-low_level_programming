@@ -25,23 +25,26 @@ void print_all(const char *const format, ...)
 		case 'c':
 			c = (char)va_arg(ap, int);
 			printf("%s%c", sep, c);
+			sep = ", "; // update only after printing
 			break;
 		case 'i':
 			n = va_arg(ap, int);
 			printf("%s%d", sep, n);
+			sep = ", ";
 			break;
 		case 'f':
 			f = va_arg(ap, double);
 			printf("%s%f", sep, f);
+			sep = ", ";
 			break;
 		case 's':
 			s = va_arg(ap, char *);
 			if (s == NULL)
 				s = "(nil)";
 			printf("%s%s", sep, s);
+			sep = ", ";
 			break;
 		}
-		sep = ", ";
 		i++;
 	}
 	va_end(ap);
