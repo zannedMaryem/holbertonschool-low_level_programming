@@ -25,7 +25,7 @@ void print_all(const char *const format, ...)
 		case 'c':
 			c = (char)va_arg(ap, int);
 			printf("%s%c", sep, c);
-			sep = ", "; // update only after printing
+			sep = ", ";
 			break;
 		case 'i':
 			n = va_arg(ap, int);
