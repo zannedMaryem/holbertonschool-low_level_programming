@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
- * print_list - a function that prints the elements of a linkes list
+ * print_dlistint - a function that prints the elements of a doubly linked list
  * @h: the head of the linked list
  * Return: the number of nodes.
  */
