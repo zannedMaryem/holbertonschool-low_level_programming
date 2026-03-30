@@ -7,6 +7,7 @@
  * @str: string to add
  * Return: the number of elements.
  */
+int _strlen(const char *s);
 list_t *add_node_end(list_t **head, const char *str)
 {
 	list_t *tmp = malloc(sizeof(list_t));
@@ -22,7 +23,7 @@ list_t *add_node_end(list_t **head, const char *str)
 		free(tmp);
 		return (NULL);
 	}
-	tmp->len = strlen(str);
+	tmp->len = _strlen(str);
 	tmp->next = NULL;
 	if (*head == NULL)
 	{
@@ -36,4 +37,19 @@ list_t *add_node_end(list_t **head, const char *str)
 	}
 	ptr->next = tmp;
 	return (tmp);
+}
+/**
+ * _strlen - calculates the length of a string
+ * @s: input string
+ *
+ * Return : string length.
+ */
+int _strlen(const char *s)
+{
+	int i = 0;
+	while (s[i] != '\0')
+	{
+		i++;
+	}
+	return (i);
 }
