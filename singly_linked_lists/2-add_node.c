@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <string.h>
 /**
- * ladd_node - a function that adds a node at the beginning of a list
+ * add_node - a function that adds a node at the beginning of a list
  * @head: the head of the linked list.
  * @str: string to add.
  * Return: the address of the new element.
