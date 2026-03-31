@@ -2,7 +2,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
- * add_dnodeint - a function that adds an element at the beginning of a doubly linked list
+ * add_dnodeint - a function that adds an element at
+ * the beginning of a doubly linked list
  * @head: the head of the linked list.
  * @n: data to add.
  * Return: the adress of the new element or NULL if it failed.
