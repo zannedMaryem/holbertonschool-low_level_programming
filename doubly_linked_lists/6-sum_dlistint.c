@@ -5,7 +5,6 @@
  * sum_dlistint - a function that finds a node at
  * index.
  * @head: the head of the linked list.
- * @index: index of the node.
  * Return: the adress of the node at index or NULL if not found.
  */
 int sum_dlistint(dlistint_t *head)
