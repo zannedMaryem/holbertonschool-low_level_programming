@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
- * insert_dnodeint_at_index - a function that finds a node at
+ * insert_dnodeint_at_index - a function that adds a node at
  * index.
  * @h: the head of the linked list.
  * @idx: position of the node to add.
