@@ -24,10 +24,10 @@ ssize_t read_textfile(const char *filename, size_t letters)
 		return (0);
 	}
 	o_err = open(filename, O_RDONLY);
-	if ( o_err < 0)
+	if (o_err < 0)
 	{
 		close(o_err);
-		return(0);
+		return (0);
 	}
 	r_err = read(o_err, msg, letters);
 	if (r_err < 0)
