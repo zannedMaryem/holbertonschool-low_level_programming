@@ -24,7 +24,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	{
 		return (0);
 	}
-	o_err = open(filename, O_RDWR, S_IRUSR | S_IWUSR);
+	o_err = open(filename, O_RDONLY, S_IRUSR | S_IWUSR);
 	r_err = read(o_err, msg, letters);
 	if (o_err < 0 || r_err < 0)
 	{
@@ -35,7 +35,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	{
 		return (0);
 	}
-	len = strlen(msg);
 	close(o_err);
+	len = strlen(msg);
 	return (len);
 }
