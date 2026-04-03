@@ -29,11 +29,11 @@ int append_text_to_file(const char *filename, char *text_content)
 	if (text_content != NULL)
 	{
 		w_fd = write(o_fd, text_content, strlen(text_content));
-	}
-	if (w_fd < 0)
-	{
-		close(o_fd);
-		return (-1);
+		if (w_fd < 0)
+		{
+			close(o_fd);
+			return (-1);
+		}
 	}
 	close(o_fd);
 	return (1);
