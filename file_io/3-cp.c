@@ -37,7 +37,7 @@ int main(int argc, char *argv[])
 	}
 	o_fd2 = open(argv[2], O_RDWR | O_CREAT | O_TRUNC, S_IRUSR |
 		S_IWUSR | S_IRGRP | S_IWGRP | S_IROTH);
-	w_fd = write(o_fd1, buffer, r_fd);
+	w_fd = write(o_fd1, buffer, sizeof(buffer));
 	if (o_fd2 < 0 || w_fd < 0)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
