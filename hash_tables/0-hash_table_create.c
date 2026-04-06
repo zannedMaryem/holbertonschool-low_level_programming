@@ -17,11 +17,17 @@ hash_table_t *hash_table_create(unsigned long int size)
 	{
 		return (NULL);
 	}
-	tab = malloc(sizeof(hash_table_t) * size);
+	tab = malloc(sizeof(hash_table_t));
 	if (tab == NULL)
 	{
 		return (NULL);
 	}
 	tab->size = size;
+	tab->array = calloc(size, sizeof(hash_table_t));
+	if (tab->array == NULL)
+	{
+		free(tab);
+		return (NULL);
+	}
 	return (tab);
 }
