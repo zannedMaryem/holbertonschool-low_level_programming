@@ -11,18 +11,17 @@
  */
 hash_table_t *hash_table_create(unsigned long int size)
 {
-    hash_table_t *tab;
+	hash_table_t *tab;
 
-    if (size == 0)
-    {
-        return(NULL);
-    }
-    tab = malloc(sizeof(hash_table_t)* size);
-    if (tab == NULL)
-    {
-        return(NULL);
-    }
-    tab->size = size;
-    
-    return(tab);
+	if (size == 0)
+	{
+		return (NULL);
+	}
+	tab = malloc(sizeof(hash_table_t) * size);
+	if (tab == NULL)
+	{
+		return (NULL);
+	}
+	tab->size = size;
+	return (tab);
 }
