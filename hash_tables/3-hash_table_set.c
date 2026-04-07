@@ -6,7 +6,7 @@
  * @ht: hash table.
  * @key: key of hash function.
  * @value: value to assign to the hash table.
- * Return : 1 if it succeeded, 0 otherwise
+ * Return: 1 if it succeeded, 0 otherwise
  */
 int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 {
