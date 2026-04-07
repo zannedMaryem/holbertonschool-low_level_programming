@@ -3,13 +3,14 @@
 #include <string.h>
 #include <stdio.h>
 /**
- * hash_table_print -
- * @gt: hash table.
+ * hash_table_print - function that prints a hash table
+ * @ht: hash table.
  */
 void hash_table_print(const hash_table_t *ht)
 {
 	hash_node_t *ptr;
 	unsigned long int i;
+	int first = 1;
 
 	if (ht == NULL)
 	{
@@ -21,12 +22,14 @@ void hash_table_print(const hash_table_t *ht)
 		ptr = ht->array[i];
 		while (ptr != NULL)
 		{
-			printf("'%s' : '%s'", ptr->key, ptr->value);
-			if (ptr->next != NULL)
+			if (!first)
 			{
 				printf(", ");
 			}
+			printf("'%s' : '%s'", ptr->key, ptr->value);
+			first = 0;
 			ptr = ptr->next;
+			
 		}
 	}
 	printf("}\n");
