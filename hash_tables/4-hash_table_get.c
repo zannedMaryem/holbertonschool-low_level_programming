@@ -14,7 +14,7 @@ char *hash_table_get(const hash_table_t *ht, const char *key)
 	unsigned long int index;
 	hash_node_t *ptr;
 
-	if (key == NULL)
+	if (key == NULL || ht == NULL)
 	{
 		return (NULL);
 	}
@@ -27,6 +27,7 @@ char *hash_table_get(const hash_table_t *ht, const char *key)
 			result = ptr->value;
 			return (result);
 		}
+		ptr = ptr->next;
 	}
 	return (NULL);
 }
